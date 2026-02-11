@@ -334,6 +334,9 @@ class ChessGame:
         if len(pos_str) != 2:
             return None
         
+        if not pos_str[1].isdigit():
+            return None
+        
         col = ord(pos_str[0].lower()) - ord('a')
         row = 8 - int(pos_str[1])
         

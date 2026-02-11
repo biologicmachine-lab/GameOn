@@ -269,6 +269,7 @@ class TestChessGame(unittest.TestCase):
         self.assertIsNone(self.game.parse_position('z5'))
         self.assertIsNone(self.game.parse_position('e'))
         self.assertIsNone(self.game.parse_position('ee2'))
+        self.assertIsNone(self.game.parse_position('ea'))  # Non-digit position
 
 
 class TestGameScenarios(unittest.TestCase):
